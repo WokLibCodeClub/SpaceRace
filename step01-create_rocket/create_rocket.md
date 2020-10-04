@@ -75,3 +75,5 @@ screen.onkey(move_rocket_down, "down")
 ```
 
 That means when the up arrow key is pressed on the keyboard, it will call `move_rocket_up`, when the down arrow key is pressed, it will call `move_rocket_down`.
+
+Now you should have a rocket image on the canvas which can be moved up and down with the arrow keys.
