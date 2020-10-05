@@ -30,7 +30,7 @@ Each turtle object has a direction it is facing, the default direction system in
 
 ![turtle orientation](turtle-orientation.png "Turtle orientation")
 
-0 degress is right, 90 degrees is up, 180 degrees is left and 270 degrees is down.
+0 degrees is right, 90 degrees is up, 180 degrees is left and 270 degrees is down.
 We want the rocket to be pointing up, the direction of the turtle can be set using the `setheading` function, have a think how the code for that would look
 and what number of degrees you would use for the heading.
 Check the following code to see if you were right:
