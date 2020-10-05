@@ -180,6 +180,7 @@ def move_rock(rock):
 ```
 
 <details><summary>Click here to see the solution</summary>
+  
 ```python
 def move_rock(rock):
   # Check if rock is going off the edge and reset it if it is.
@@ -193,6 +194,7 @@ def move_rock(rock):
   # Move the rock forward
   rock.forward(1.5)
 ```
+</details>
 
  This function takes care of moving the rocks left and right (using rock.forward),
  but it is also responsible for resetting the rocks once they get off the end of the screen.
