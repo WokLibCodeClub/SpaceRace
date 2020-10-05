@@ -73,6 +73,7 @@ def create_rock(direction):
   rock.penup()
   rock.direction = direction
   reset_rock(rock)
+```
 
 Currently, if we call this function, it will create the rock, set the position and heading,
 but do nothing else with it.
