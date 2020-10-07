@@ -1,6 +1,8 @@
 # SpaceRace
 Instructions for python game where you are a rocket and must avoid asteroids
 
+![](demo.gif)
+
 This project can be started by either
 
 1. Go to the starter project in trinket and remixing it: https://trinket.io/python/2a47e8809a
