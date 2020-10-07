@@ -32,9 +32,7 @@ See if you can complete the TODO in the code:
 ```python
   if rocket.ycor() > YMAX:
     reset_rocket()
-    score = score + 1
-	# Python also has a special way to write the code above, the line below does exactly the same as the above:
-	# score += 1
+    score = score + 1  # add one to the score
 ```
 </details>
 

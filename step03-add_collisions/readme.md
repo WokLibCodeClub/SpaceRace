@@ -18,7 +18,7 @@ The first function we will add is one which checks if the rocket has collided wi
 I can tell you that one of the `XXX` is `True`, and one of them is `False`, can you figure out which one is which, you will need to look at the code that
 was added to the main loop to help you:
 
-```
+```python
 def collides_with_rocket(rock):
   distance = rocket.distance(rock)
   if distance < 20:
