@@ -52,17 +52,18 @@ score_turtle.hideturtle()
 score_turtle.color("white")
 ```
 
-Finally, we want to get the `score_turtle` to write the score to the screen. Put the following line of code in your main loop:
+Finally, we want to get the `score_turtle` to write the score to the screen. Put the following line of code just under the line where you increase
+the score:
 
 ```python
-  update_scores()
+  update_score()
 ```
 
 Again, be careful regarding indentation, and position this code after the score has been increased. Now let's write some code to write the 
-score to the screen, put this function definition in the "Scores" section of the code **after** the `score_turtle` has been created:
+score to the screen, put this function definition in the "Scores" section of the code after the `score_turtle` has been created:
 
 ```python
-def update_scores():
+def update_score():
   score_turtle.clear()    # delete any current text
   score_msg = XXXX 
   score_turtle.write(score_msg, align="right")
@@ -73,6 +74,14 @@ What would you put in place for the score text, one choice would be:
 ```python
   score_msg = "Score: " + str(score)
 ```
+
+Lastly, call `update_score` just after defining it so the score is written to the screen before the main loop starts. This means add:
+
+```python
+update_score()
+```
+
+just before the start of the "Win or lose" section.
 
 If all is correct, then you should now have a bit of text when the game is started showing the score in the bottom-right corner.
 The score should increase if the rocket gets to the end.
