@@ -71,14 +71,21 @@ Now the game should end when the player gets to a score of 3!
 Currently, the "GAME OVER" or "YOU WIN" message could be overlapping with asteroids. It would be nice to delete the asteroids that are overlapping
 when the message shows. Add the following function:
 
-```python def clear_rocks_for_message(): for rock in rocks: if rock.ycor() < 50 and rock.ycor() > -10: rock.hideturtle() ```
+```python
+def clear_rocks_for_message():
+  for rock in rocks:
+    if rock.ycor() < 50 and rock.ycor() > -10:
+      rock.hideturtle()
+```
 
 This hides the rocks if they are in the area of the end-game message.
 
 Finally, call this function after either of the end-game messages is written i.e. put the following line after `playing = False` in each of
 `game_over` and `player_wins`:
 
-```python clear_rocks_for_message() ```
+```python
+  clear_rocks_for_message()
+```
 
 And that's the end of this project! You should now have a functioning space race game coded in python.
 
