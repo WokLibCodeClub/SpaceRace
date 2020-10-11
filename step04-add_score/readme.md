@@ -85,3 +85,5 @@ just before the start of the "Win or lose" section.
 
 If all is correct, then you should now have a bit of text when the game is started showing the score in the bottom-right corner.
 The score should increase if the rocket gets to the end.
+
+[Click here to go to step 5 to add a life limit.](../step05-add_lives.readme.md)

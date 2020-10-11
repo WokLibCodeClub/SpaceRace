@@ -6,17 +6,18 @@ However, the asteroids can go straight over the rocket. Let's add in some code t
 First let's add something to the main loop. It's worth mentioning that pretty much all games out there will have a main loop (or event loop).
 This is a loop which is always cycling and checking if the user has pressed a button, clicked a mouse, or something else has happened, such
 as an asteroid hitting a rocket. At the end of the last step, we added some code to the main loop which moved the rocks across the screen.
-Now we want to check if any asteroid has hit the rocket after it has moved. Add the following to the main loop after the rock has been moved:
+Now we want to check if any asteroid has hit the rocket after it has moved. Add the following to the loop over the rocks inside the main loop
+after the rock has been moved:
 
 ```python
-if collides_with_rocket(rock):
-  reset_rocket()
+    if collides_with_rocket(rock):
+      reset_rocket()
 ```
 
-At the moment, this will break the code because we need to define two new functions. Do you know what the names of those functions are?
-The first function we will add is one which checks if the rocket has collided with a rock. The following function is missing the return values (`XXX`).
-I can tell you that one of the `XXX` is `True`, and one of them is `False`, can you figure out which one is which, you will need to look at the code that
-was added to the main loop to help you:
+Make sure this is indented to the same level as the `move_rock` line, this will mean it is in the rock loop. At the moment, this will break the code
+because we need to define two new functions. Do you know what the names of those functions are?  The first function we will add is one which checks if
+the rocket has collided with a rock. The following function is missing the return values (`XXX`).  I can tell you that one of the `XXX` is `True`, and
+one of them is `False`, can you figure out which one is which, you will need to look at the code that was added to the main loop to help you:
 
 ```python
 def collides_with_rocket(rock):
@@ -58,3 +59,5 @@ def reset_rocket():
 Ensure this function is defined after the `rocket` turtle has been created.
 
 Now try moving the rocket up and let it get hit by an asteroid. The rocket should be "reset" and move back to the beginning.
+
+[Click here to go to step 4 to add a score to the game.](../step04-add_score/readme.md)

@@ -62,32 +62,36 @@ def player_wins():
   t.hideturtle()
   t.color("lime")
   t.goto(0,0)
-  t.write("YOU WIN!!!!!", align="center", font=("Arial", 40, "bold"))
-  global playing
-  playing = False
-```
-</details>
+  t.write("YOU WIN!!!!!", align="center", font=("Arial", 40, "bold")) global playing playing = False ``` </details>
 
 Now the game should end when the player gets to a score of 3!
 
 ## Tidy up end-game message
 
-Currently, the "GAME OVER" or "YOU WIN" message could be overlapping with asteroids. It would be nice to delete the asteroids that are
-overlapping when the message shows. Add the following function:
+Currently, the "GAME OVER" or "YOU WIN" message could be overlapping with asteroids. It would be nice to delete the asteroids that are overlapping
+when the message shows. Add the following function:
 
-```python
-def clear_rocks_for_message():
-  for rock in rocks:
-    if rock.ycor() < 50 and rock.ycor() > -10:
-      rock.hideturtle()
-```
+```python def clear_rocks_for_message(): for rock in rocks: if rock.ycor() < 50 and rock.ycor() > -10: rock.hideturtle() ```
 
 This hides the rocks if they are in the area of the end-game message.
 
-Finally, call this function after either of the end-game messages is written i.e. put the following line after `playing = False` in each of `game_over` and `player_wins`:
+Finally, call this function after either of the end-game messages is written i.e. put the following line after `playing = False` in each of
+`game_over` and `player_wins`:
 
-```python
-clear_rocks_for_message()
-```
+```python clear_rocks_for_message() ```
 
 And that's the end of this project! You should now have a functioning space race game coded in python.
+
+## Further Challenges
+
+Here are some further challenges if you want to keep developing the game:
+
+1. Give the rocks different random speeds. Look how we stored the direction in the rock object, and see if you can add a speed attribute. Then you
+   will need to use the speed attribute in the correct part of the code. 
+2. Add the capability to restart the game without needing to re-run the trinket code. One way to do this would be to add another loop to the main
+   loop. You will want the lives/score to reset, and the rocket to go to the start. Once this has been done, a high score feature could be added to
+   the game.
+3. Add an explosion when a rock hits the rocket. This would need a new image uploaded and some extra code in the collision detection.
+4. Add a blaster weapon to the rocket that can destroy the rocks in the path! This will make the game a bit easy but it would be fun to add. Can you
+   add code so a blaster fires when the space-bar is pressed. This would create a turtle object to represent the shot, and that would then need
+   collision code for if it hits a rock!

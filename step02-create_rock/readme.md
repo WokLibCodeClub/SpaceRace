@@ -200,3 +200,5 @@ def move_rock(rock):
  but it is also responsible for resetting the rocks once they get off the end of the screen.
 
 Once you have completed this step, you should asteroids flying left and right across the game.
+
+[Click here to go to step 3 to add collisions between the rocks and the rocket.](../step03-add_collisions/readme.md)

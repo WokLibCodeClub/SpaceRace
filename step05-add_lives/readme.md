@@ -67,3 +67,5 @@ update_lives()
 
 The score shown on the screen should now decrease each time the rocket is hit. However, does the game end at 0!? No, it does not,
 we need to add more code to finish the game!
+
+[Click here to go to step 6 to add a game ending](../step06-ending_the_game.readme.md)
