@@ -62,7 +62,9 @@ def player_wins():
   t.hideturtle()
   t.color("lime")
   t.goto(0,0)
-  t.write("YOU WIN!!!!!", align="center", font=("Arial", 40, "bold")) global playing playing = False
+  t.write("YOU WIN!!!!!", align="center", font=("Arial", 40, "bold"))
+  global playing
+  playing = False
 ```
 </details>
 
