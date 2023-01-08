@@ -10,4 +10,4 @@ This project can be started by either:
 
 Go through the details of each step in this repository to build up the components of the game.
 
-[Go to step 1](../step01-create_rocket/)
+[Go to step 1](step01-create_rocket/)
