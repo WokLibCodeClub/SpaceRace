@@ -1,4 +1,4 @@
-# Adding a score to the game
+# Step 4 - Adding a score to the game
 
 ## The `score` variable
 
@@ -87,3 +87,5 @@ If all is correct, then you should now have a bit of text when the game is start
 The score should increase if the rocket gets to the end.
 
 [Click here to go to step 5 to add a life limit.](../step05-add_lives/readme.md)
+
+[Back to Step 3](../step03-add_collisions/readme.md)
