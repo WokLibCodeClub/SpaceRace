@@ -1,4 +1,4 @@
-# Creating the rocket
+# Step 1 - Creating the rocket
 
 The first thing we will do is create a rocket which the player will control.
 
