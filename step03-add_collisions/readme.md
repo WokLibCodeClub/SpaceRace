@@ -1,4 +1,4 @@
-# Detecting when an asteroid hits the rocket
+# Step 3 - Detecting when an asteroid hits the rocket
 
 At the moment, you should have a rocket, which you can move up and down, and some asteroids flying across the screen.
 However, the asteroids can go straight over the rocket. Let's add in some code to detect an asteroid colliding with the rocket.
@@ -61,3 +61,5 @@ Ensure this function is defined after the `rocket` turtle has been created.
 Now try moving the rocket up and let it get hit by an asteroid. The rocket should be "reset" and move back to the beginning.
 
 [Click here to go to step 4 to add a score to the game.](../step04-add_score/readme.md)
+
+[Back to Step 2](../step02-create_rock/readme.md)
