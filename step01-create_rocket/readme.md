@@ -79,3 +79,5 @@ That means when the up arrow key is pressed on the keyboard, it will call `move_
 Now you should have a rocket image on the canvas which can be moved up and down with the arrow keys.
 
 [Click here to go to step 2 to learn how to add the rocks.](../step02-create_rock/readme.md)
+
+[Back to introduction](../README.md)
