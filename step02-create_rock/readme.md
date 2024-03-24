@@ -1,4 +1,4 @@
-# Creating the rocks (asteroids)
+# Step 2 - Creating the rocks (asteroids)
 
 ## Creating a single rock
 
@@ -202,3 +202,5 @@ def move_rock(rock):
 Once you have completed this step, you should asteroids flying left and right across the game.
 
 [Click here to go to step 3 to add collisions between the rocks and the rocket.](../step03-add_collisions/readme.md)
+
+[Back to Step 1[(../step01-create_rocket/readme.md)
