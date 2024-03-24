@@ -1,4 +1,4 @@
-# Ending the game
+# Step 6 - Ending the game
 
 ## Losing the game
 
@@ -106,3 +106,5 @@ Here are some further challenges if you want to keep developing the game:
 4. Add a blaster weapon to the rocket that can destroy the rocks in the path! This will make the game a bit easy but it would be fun to add. Can you
    add code so a blaster fires when the space-bar is pressed. This would create a turtle object to represent the shot, and that would then need
    collision code for if it hits a rock!
+
+[Back to Step 5](../step05-add_lives/readme.md)
