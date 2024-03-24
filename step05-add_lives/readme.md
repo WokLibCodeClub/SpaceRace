@@ -1,4 +1,4 @@
-# Adding lives to the game
+# Step 5 - Adding lives to the game
 
 So far you have coded up a game with a rocket and asteroids, and there
 is a score that increases each time the rocket gets to the end. However, this will go on forever! The game should
@@ -69,3 +69,5 @@ The score shown on the screen should now decrease each time the rocket is hit. H
 we need to add more code to finish the game!
 
 [Click here to go to step 6 to add a game ending](../step06-ending_the_game/readme.md)
+
+[Back to Step 4](../step04-add_score)
