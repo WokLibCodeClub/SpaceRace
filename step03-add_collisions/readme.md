@@ -42,15 +42,13 @@ def collides_with_rocket(rock):
   else:
     return False
 ```
-The solution shows that we return `True` if the distance is less than 20 units from the rocket to the asteroid, it returns `False` if the distance
+The solution shows that we return `True` if the distance is less than 20 units from the rocket to the asteroid, and `False` if the distance
 is greater than or equal to 20. This means that the function `collides_with_rocket` will return `True` if the asteroid is close to (touching) the rocket,
 it will return `False` if the asteroid is not touching to the rocket.
 
 </details>
 
-The next function that we need to add is `reset_rocket`. This will be a small function that moves the rocket back to the starting position. In the first
-step of creating this game we positioned the rocket at the start, can you find the line of code that moves the rocket to the start and create a function
-called `reset_rocket` that moves the rocket to the start again. The solution is below:
+The next function that we need to add is `reset_rocket`. This will be a small function that moves the rocket back to the starting position when it has hit an asteroid. In step 1 of this game we wrote code to send the rocket to its starting position; can you find the line of code that moves the rocket to the starting position, and then use that code to create a function called `reset_rocket` that moves the rocket to the same starting position again? The solution is below:
 
 <details><summary>Show solution</summary>
 
@@ -62,7 +60,7 @@ def reset_rocket():
 
 Ensure this function is defined after the `rocket` turtle has been created.
 
-Now try moving the rocket up and let it get hit by an asteroid. The rocket should be "reset" and move back to the beginning.
+Now try moving the rocket up and let it get hit by an asteroid. The rocket should "reset" and move back to the beginning.
 
 [Click here to go to step 4 to add a score to the game.](../step04-add_score/readme.md)
 
