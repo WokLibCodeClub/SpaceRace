@@ -9,7 +9,7 @@ rocket = Turtle()
 rocket.shape("rocket.png")
 ```
 
-The turtle library can be used to draw pictures by moving the turtle objects, however, we don't want to draw anything so we tell the turtle to lift the (virtual) pen off the (virtual) paper:
+The turtle library can be used to draw shapes by leaving a line behind the turtle object as it moves; however, we don't want to draw anything so we tell the turtle to lift the (virtual) pen off the (virtual) paper:
 
 ```python
 rocket.penup()
