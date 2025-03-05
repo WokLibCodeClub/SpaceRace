@@ -15,9 +15,7 @@ The turtle library can be used to draw shapes by leaving a line behind the turtl
 rocket.penup()
 ```
 
-Now we want to put the rocket at the starting position, the starter code sets the screen size to 400 x 400 pixels.
-This means both the x-axis and y-axis start at -200 and finish at +200. We want the rocket to start at the bottom of the y-axis and the middle of the x-axis.
-Can you think what those coodinates should be, click "Show code" to see how we move the rocket to the starting coordinates:
+Now we want to put the rocket at the starting position, the starter code sets the screen size to 400 x 400 pixels. This means both the x-axis and y-axis start at -200 and finish at +200. We want the rocket to start at the bottom of the y-axis and the middle of the x-axis. Can you think what those coodinates should be, click "Show code" to see how we move the rocket to the starting coordinates:
 
 <details><summary>Show code</summary>
   
@@ -26,14 +24,11 @@ rocket.goto(0,-190)
 ```
 </details>
 
-Each turtle object has a direction it is facing: the default direction system in turtle looks like this:
+Each turtle object has a direction it is facing, specified by a number from 0 to 360: the default direction system in turtle looks like this:
 
 ![turtle orientation](turtle-orientation.png "Turtle orientation")
 
-0 degrees is right, 90 degrees is up, 180 degrees is left and 270 degrees is down.
-We want the rocket to be pointing up, the direction of the turtle can be set using the `setheading` function, have a think how the code for that would look
-and what number of degrees you would use for the heading.
-Check the following code to see if you were right:
+0 degrees is to the right, 90 degrees is up, 180 degrees is to the left and 270 degrees is down. We want the rocket to be pointing *up*. The direction of the turtle can be set using the `setheading` function. Have a think what the code for that would look like and what number of degrees you would use for the heading. Check the following code to see if you were right:
 
 <details><summary>Show code</summary>
   
