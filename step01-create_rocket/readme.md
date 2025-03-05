@@ -1,6 +1,6 @@
 # Step 1 - Creating the rocket
 
-***All the code in this step should go in the part of the code headed 
+***All the code in this step should go in the part of the code headed ```Rocket```***
 
 The first thing we will do is create a rocket which the player will control.
 
@@ -52,8 +52,7 @@ If we were to call this function like this:
 move_rocket_up()
 ```
 
-then the rocket would move forward by 5 units. There is a function called `back` on the rocket, could you write a function for moving the rocket down.
-Check the code below:
+then the rocket would move forward by 5 units. This uses the turtle ```forward``` function. There is also a function called ```back``` in the turtle library. Could you write a function for moving the rocket down? Check the code below:
 
 <details><summary>Show code</summary>
 
@@ -63,14 +62,14 @@ def move_rocket_down():
 ```
 </details>
 
-Now we make use of the turtle module to connect these functions to the keyboard arrow keys, referred to with `"up"` and `"down"`:
+Now we make use of the turtle ```screen.onkey()``` function to connect these functions to the keyboard UP and DOWN arrow keys:
 
 ```python
-screen.onkey(move_rocket_up, "up")
-screen.onkey(move_rocket_down, "down")
+screen.onkey(move_rocket_up, "up") # this specifies the code which will be run when the user presses the UP arrow
+screen.onkey(move_rocket_down, "down") # this specifies the code which will be run when the user presses the DOWN arrow
 ```
 
-That means when the up arrow key is pressed on the keyboard, it will call `move_rocket_up`, when the down arrow key is pressed, it will call `move_rocket_down`.
+That means when the up arrow key is pressed on the keyboard, it will call the function `move_rocket_up`, when the down arrow key is pressed, it will call `move_rocket_down`.
 
 Now you should have a rocket image on the canvas which can be moved up and down with the arrow keys.
 
