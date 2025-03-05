@@ -75,7 +75,7 @@ def create_rock(direction):
 ```
 
 Currently, if we call this function, it will create a rock, set the position and heading, but do nothing else with it.
-When the function gets to the end, the `rock` object will no longer be accessible and will eventually be destroyed. In order to keep/store the rock after the function finishes, the rock is *returned* from the
+When the function gets to the end, the `rock` object will no longer be accessible and will eventually be destroyed. In order to keep/store/use the rock after the function finishes, the rock is *returned* from the
 function by using the `return` keyword:
 
 ```python
@@ -88,7 +88,7 @@ def create_rock(direction):
   return rock     # return the rock to the function caller
 ```
 
-So now we can create a rock by writing the following code:
+So now we can create a rock by writing one or other of the following bits of code:
 
 ```python
 rock = create_rock("left")
@@ -150,7 +150,7 @@ After this code has executed, the `rocks` list should contain 30 rock objects.
 Although the rocket is controlled by the user pressing keys, the asteroids must be moved by the code itself.
 That is the final step of the asteroids step.
 
-## Set the asteroids in motion
+## Setting the asteroids in motion
 
 ***The next bit of code should go in the part of the project headed `=== Main loop ===`.*** 
 
@@ -202,9 +202,9 @@ def move_rock(rock):
  This function takes care of moving the rocks (either to the left or the right, using `rock.forward`),
  but it is also responsible for resetting the rocks once they get off the edges of the screen.
 
-Once you have completed this step, you should see asteroids flying left and right across the game.
+Once you have completed this step, you should see asteroids flying left and right across the screen.
 
-Don't forget to ***test*** our code.
+Don't forget to ***test*** your code.
 
 [Click here to go to step 3 to add collisions between the rocks and the rocket.](../step03-add_collisions/readme.md)
 
