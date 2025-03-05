@@ -145,9 +145,10 @@ for _ in range(number_of_left_rocks):
 ```
 </details>
 
-After this code has executed, the `list` should contain 30 rock objects.
-The rocket is controlled by the user pressing keys, the asteroids must be moved by the code itself.
-That is the final step to the asteroids.
+After this code has executed, the `rocks` list should contain 30 rock objects.
+
+Although the rocket is controlled by the user pressing keys, the asteroids must be moved by the code itself.
+That is the final step of the asteroids step.
 
 ## Set the asteroids in motion
 
