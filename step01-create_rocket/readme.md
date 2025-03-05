@@ -1,6 +1,6 @@
 # Step 1 - Creating the rocket
 
-***All the code in this step should go in the part of the code headed ```Rocket```***
+***All the code in this step should go in the part of the code headed ```=== Rocket ===```***
 
 The first thing we will do is create a rocket which the player will control.
 
