@@ -4,20 +4,24 @@ At the moment, you should have a rocket, which you can move up and down, and som
 However, the asteroids can go straight over the rocket. Let's add in some code to detect an asteroid colliding with the rocket.
 
 First let's add something to the main loop. It's worth mentioning that pretty much all games out there will have a main loop (or event loop).
-This is a loop which is always cycling and checking if the user has pressed a button, clicked a mouse, or something else has happened, such
-as an asteroid hitting a rocket. At the end of the last step, we added some code to the main loop which moved the rocks across the screen.
-Now we want to check if any asteroid has hit the rocket after it has moved. Add the following to the loop over the rocks inside the main loop
-after the rock has been moved:
+This is a loop which is always cycling, and can check if the user has pressed a button, clicked a mouse, or if something else has happened, such
+as an asteroid hitting a rocket. 
+
+At the end of the last step, we added some code to the main loop which moved the rocks across the screen.
+Now we want to check if any asteroid has hit the rocket after it moved. Add the following bit of code to the end of the `for` loop inside the main loop which begins `for rock in rocks:`
+:
 
 ```python
     if collides_with_rocket(rock):
       reset_rocket()
 ```
 
-Make sure this is indented to the same level as the `move_rock` line, this will mean it is in the rock loop. At the moment, this will break the code
-because we need to define two new functions. Do you know what the names of those functions are?  The first function we will add is one which checks if
-the rocket has collided with a rock. The following function is missing the return values (`XXX`).  I can tell you that one of the `XXX` is `True`, and
-one of them is `False`, can you figure out which one is which, you will need to look at the code that was added to the main loop to help you:
+Make sure this is indented to the same level as the `move_rock` line - this will ensure it is in the rock loop. If we try to test this new code it will break the code
+because we have referred to two functions which we haven't written yet. Do you know what the names of those functions are?
+
+***Note: the two new functions we need to write will be placed in the `=== Rocket ===` part of the code.***
+
+The first function we will add is one which checks if the rocket has collided with a rock. It does this using the turtle `distance` function which measures the distance between two turtles. If the distance gets too small then the code assumes a collision has happened. The code below is missing the return values (`XXX`). I can tell you that one of the `XXX` is `True`, and one of them is `False`, can you figure out which one is which? You will need to look at the code that was added to the main loop to help you:
 
 ```python
 def collides_with_rocket(rock):
