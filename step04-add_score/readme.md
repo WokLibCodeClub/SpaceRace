@@ -47,7 +47,7 @@ Be careful about the indentation here. We do not need to check the position of t
 to be inside the `for rock in rocks:` loop. We want it to be *just after* that loop. So the `if` statement to check the position of the rocket should be at the same
 indentation as the `for` of the `for rock in rocks:` loop.
 
-OK, so now we have a `score` variable and it increases each time the rocket gets to the top of the game. However, the player has no
+OK, so now we have a `score` variable and it increases each time the rocket gets to the top of the screen. However, the player has no
 way of seeing the score! We need to add some code to show the score on the screen. We need to use another Turtle to add text to the screen.
 The following code creates a turtle object and places it in a corner of the screen. Can you tell which corner it will be? The code hides the turtle because
 we do not want to see the turtle itself, we just want to see the text that it is going to write:
