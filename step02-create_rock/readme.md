@@ -22,21 +22,20 @@ def create_rock():
 </details>
 
 In the game, there will be some asteroids travelling from right-to-left and some asteroids
-travelling from left-to-right. We can modify the `create_rock` function such that it takes an option
-which instructs the rock to travel left or travel right. We can do this by adding a function parameter
-called `direction` in the parentheses:
+travelling from left-to-right. We can modify the `create_rock` function so that it takes in information
+which instructs the rock to travel either left or right. We can do this by adding a function *parameter*
+called `direction` in the parentheses. Here is the revised function:
 
 ```python
-def create_rock(direction):
+def create_rock(direction): # Notice the parameter inside the brackets
   rock = Turtle()
   rock.shape("asteroid.png")
   rock.penup()
-  # This adds the direction parameter to the turtle object
+  # Add a direction parameter to the turtle object and set it to the direction received as a parameter
   rock.direction = direction
 ```
 
-As with the rocket, we need to give each asteroid a heading. In step01, an orientation plot showed the values needed for various directions. Can you remember the values required for left and right? Let's
-write a function that can put the asteroid in a starting position and set its heading:
+As with the rocket, we need to give each asteroid a heading. In step 1, there was a diagram which showed the angle values needed for various heading directions. Can you remember the values required for left and right? Let's write a new function that can put the asteroid in a suitable starting position and set its heading:
 
 ```python
 def reset_rock(rock):
@@ -46,9 +45,8 @@ def reset_rock(rock):
     # Start rock at position off the right hand side of screen and tell it to travel left
 ```
 
-That function takes a rock as a parameter and it checks if the direction of the rock is set to
-`"right"` or `"left"`. At the moment I have put a comment in the code to describe the logic
-that needs to be completed. The following code block shows the completed function:
+This function takes ```rock``` as a parameter and it checks if the direction of the rock is set to
+`"right"` or `"left"`. The comments in the code  describe the logic that needs to be completed. The following code block shows the completed function:
 
 ```python
 def reset_rock(rock):
@@ -63,10 +61,9 @@ def reset_rock(rock):
 ```
 
 This generates random starting positions for the asteroids. These positions are actually off the
-visible viewing area, this means that when they start travelling they will move into the visible
-area and eventually go off the other end of the visible area.
+visible viewing area (off the screen to the left if the rock is travelling "right", and off to the right if the rock is travelling "left"). This means that when the rocks start travelling they will move into the visible area and eventually go off the other side of the visible area.
 
-We need to call `reset_rock` on every rock that we create in `create_rock`. Do you know where you will need to put the call to `reset_rock`? It should be put at the bottom, the important bit is that `reset_rock` comes after setting the `direction`: 
+We need to call function ```reset_rock``` for every rock that we create with function ```create_rock```. Do you know where you will need to put the call to `reset_rock`? It should be put at the bottom of function ```create_rock```. **Note:** it's important that `reset_rock` is called *after* setting the `direction`: 
 
 ```python
 def create_rock(direction):
@@ -77,9 +74,8 @@ def create_rock(direction):
   reset_rock(rock)
 ```
 
-Currently, if we call this function, it will create the rock, set the position and heading,
-but do nothing else with it.
-When the function gets to the end, the `rock` object will no longer be accessible and will eventually destroyed. In order to keep/store the rock after the function finishes, the rock is returned from the
+Currently, if we call this function, it will create a rock, set the position and heading, but do nothing else with it.
+When the function gets to the end, the `rock` object will no longer be accessible and will eventually be destroyed. In order to keep/store the rock after the function finishes, the rock is *returned* from the
 function by using the `return` keyword:
 
 ```python
