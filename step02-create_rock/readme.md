@@ -2,7 +2,7 @@
 
 ## Creating a single rock
 
-***ALMOST All the code in this step should go in the part of the code headed ```=== Rocks ===``***
+***ALMOST All the code in this step should go in the part of the code headed `=== Rocks ===`***
 
 Next we need to create the asteroids which the player has to avoid.
 There will be many asteroids so the code to create the asteroid will be needed many times.
@@ -152,7 +152,7 @@ That is the final step of the asteroids step.
 
 ## Set the asteroids in motion
 
-***The next bits of code should go in the part of the project headed `=== Main loop ===`.*** 
+***The next bit of code should go in the part of the project headed `=== Main loop ===`.*** 
 
 It's time to modify the "Main loop" section of the starter code. The rocks need to be moved as part of the main loop because in order to move *all* the rocks, the code must loop over each rock and this is something that needs to be done over and over again. We will loop over all the rocks using a `for` loop again:
 
@@ -161,20 +161,24 @@ for rock in rocks:
   move_rock(rock)
 ```
 
-The code above assumes there is a function called `move_rock` which takes a rock as the parameter.
-So let's write the `move_rock` function. Here is some incomplete code again, trying filling in the gaps:
+The code above assumes there is a function called `move_rock` which takes a rock as the parameter, but we haven't written this function yet.
+So let's write the `move_rock` function. 
+
+***Put this function in the `=== Rocks ===` section.***
+
+Here is some incomplete code again, trying filling in the gaps:
 
 ```python
 def move_rock(rock):
   # Check if rock is going off the edge and reset it if it is.
   xcoord = rock.xcor()
-  # If rock goes off the left of the screen then reset
+  # If rock goes off the left of the screen then reset it by calling the reset_rock function
   if rock.direction == "left" and xcoord < XXX:
     reset_rock(rock)
-  # If rock goes off the right of the screen then reset
+  # If rock goes off the right of the screen then reset it
   if rock.direction == "right" and XXX > XMAX:
     reset_rock(rock)
-  # Move the rock forward
+  # If the rock is not going off either edge then move the rock forward
   rock.XXX(1.5)
 ```
 
@@ -184,21 +188,23 @@ def move_rock(rock):
 def move_rock(rock):
   # Check if rock is going off the edge and reset it if it is.
   xcoord = rock.xcor()
-  # If rock goes off the left of the screen then reset
+  # If rock goes off the left of the screen then reset it by calling the reset_rock function
   if rock.direction == "left" and xcoord < XMIN:
     reset_rock(rock)
-  # If rock goes off the right of the screen then reset
+  # If rock goes off the right of the screen then reset it
   if rock.direction == "right" and xcoord > XMAX:
     reset_rock(rock)
-  # Move the rock forward
+  # If the rock is not going off either edge then move the rock forward
   rock.forward(1.5)
 ```
 </details>
 
- This function takes care of moving the rocks left and right (using rock.forward),
- but it is also responsible for resetting the rocks once they get off the end of the screen.
+ This function takes care of moving the rocks (either to the left or the right, using `rock.forward`),
+ but it is also responsible for resetting the rocks once they get off the edges of the screen.
 
-Once you have completed this step, you should asteroids flying left and right across the game.
+Once you have completed this step, you should see asteroids flying left and right across the game.
+
+Don't forget to ***test*** our code.
 
 [Click here to go to step 3 to add collisions between the rocks and the rocket.](../step03-add_collisions/readme.md)
 
