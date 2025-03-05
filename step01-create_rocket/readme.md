@@ -17,7 +17,7 @@ rocket.penup()
 
 Now we want to put the rocket at the starting position, the starter code sets the screen size to 400 x 400 pixels.
 This means both the x-axis and y-axis start at -200 and finish at +200. We want the rocket to start at the bottom of the y-axis and the middle of the x-axis.
-Can you think what those coodinates should be, click "Show code" to see how we move the rocket to the coordinates:
+Can you think what those coodinates should be, click "Show code" to see how we move the rocket to the starting coordinates:
 
 <details><summary>Show code</summary>
   
@@ -26,7 +26,7 @@ rocket.goto(0,-190)
 ```
 </details>
 
-Each turtle object has a direction it is facing, the default direction system in turtle looks like this:
+Each turtle object has a direction it is facing: the default direction system in turtle looks like this:
 
 ![turtle orientation](turtle-orientation.png "Turtle orientation")
 
