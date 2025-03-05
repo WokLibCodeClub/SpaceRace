@@ -1,5 +1,7 @@
 # Step 1 - Creating the rocket
 
+***All the code in this step should go in the part of the code headed 
+
 The first thing we will do is create a rocket which the player will control.
 
 To create the rocket we create a Turtle object and instruct it to use the `rocket.png` image:
@@ -15,7 +17,7 @@ The turtle library can be used to draw shapes by leaving a line behind the turtl
 rocket.penup()
 ```
 
-Now we want to put the rocket at the starting position, the starter code sets the screen size to 400 x 400 pixels. This means both the x-axis and y-axis start at -200 and finish at +200. We want the rocket to start at the bottom of the y-axis and the middle of the x-axis. Can you think what those coodinates should be, click "Show code" to see how we move the rocket to the starting coordinates:
+Now we want to put the rocket at the starting position, the starter code sets the screen size to 400 x 400 pixels. This means both the x-axis and y-axis start at -200 and finish at +200. We want the rocket to start at the bottom of the y-axis and the middle of the x-axis. Can you think what those coodinates should be? Click "Show code" to see how we move the rocket to the starting coordinates:
 
 <details><summary>Show code</summary>
   
@@ -37,8 +39,7 @@ rocket.setheading(90)
 ```
 </details>
 
-Now let's make it possible for the player to move the rocket.
-To do this we need to define functions to move the rocket. Here is how to define the function for moving the rocket forward:
+Now let's make it possible for the player to move the rocket. To do this we need to define *functions* to move the rocket. Here is how to define the function for moving the rocket up:
 
 ```python
 def move_rocket_up():
