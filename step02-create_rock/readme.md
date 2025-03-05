@@ -2,12 +2,14 @@
 
 ## Creating a single rock
 
+***All the code in this step should go in the part of the code headed ```=== Rocks ===``***
+
 Next we need to create the asteroids which the player has to avoid.
 There will be many asteroids so the code to create the asteroid will be needed many times.
 One way to re-use the same bit of code multiple times is to put it in a function.
-Two functions were defined in step01 for moving the rocket. As a reminder, the keyword `def`
+We already defined two functions step 1 for moving the rocket. As a reminder, the keyword ```def```
 is used to define a function. Can you write a function with the name `create_rock` which creates
-a Turtle object, tells it to use the `asteroid.png` image and to take the pen up. The solution is below.
+a Turtle object, tells it to use the `asteroid.png` image as its shape, and lifts the pen up? The solution is below.
 
 <details><summary>Show code</summary>
 
