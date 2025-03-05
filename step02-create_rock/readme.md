@@ -2,7 +2,7 @@
 
 ## Creating a single rock
 
-***All the code in this step should go in the part of the code headed ```=== Rocks ===``***
+***ALMOST All the code in this step should go in the part of the code headed ```=== Rocks ===``***
 
 Next we need to create the asteroids which the player has to avoid.
 There will be many asteroids so the code to create the asteroid will be needed many times.
@@ -151,6 +151,8 @@ Although the rocket is controlled by the user pressing keys, the asteroids must 
 That is the final step of the asteroids step.
 
 ## Set the asteroids in motion
+
+*** The next bits of code should go in the part of the project headed `=== Main loop ===`.*** 
 
 It's time to modify the "Main loop" section of the starter code. The rocks need to be moved as
 part of the main loop. In order to move all the rocks, the code must loop over each rock. Can you think of something in python for looping? It is the `for` loop again, the `for` loop can be used to loop
