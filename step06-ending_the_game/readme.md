@@ -53,6 +53,8 @@ in for `XXX`:
     player_wins()
 ```
 
+This `if` block should be indented to line up with the previous `if` block, which tested for the value of `lives`.
+
 Now define the `player_wins` function, this is very similar to the `game_over` function. Put this new function in the ***`=== Win or lose ===`*** section of the code. 
 Copy and paste the `game_over` function and rename the function `player_wins`.  Now change the text colour from "red" to "lime", and change the message from "GAME OVER" to "YOU WIN".
 Solution below:
