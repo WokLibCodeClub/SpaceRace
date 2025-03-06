@@ -41,6 +41,8 @@ rocket.setheading(90)
 ```
 </details>
 
+Run the code again to check the rocket is now pointing up.
+
 Now let's make it possible for the player to move the rocket. To do this we need to define *functions* to move the rocket. Here is how to define the function for moving the rocket up:
 
 ```python
