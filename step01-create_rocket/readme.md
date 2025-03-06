@@ -26,6 +26,8 @@ rocket.goto(0,-190)
 ```
 </details>
 
+Run the code to check it. Looks as if the rocket is pointing in the wrong direction...
+
 Each turtle object has a direction it is facing, specified by a number from 0 to 360: the default direction system in turtle looks like this:
 
 ![turtle orientation](turtle-orientation.png "Turtle orientation")
