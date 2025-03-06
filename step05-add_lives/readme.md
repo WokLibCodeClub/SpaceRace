@@ -35,7 +35,7 @@ number of lives when the rocket collides with an asteroid. Take a look at the ma
 where would be a good place to decrease the number of lives. Is there somewhere that already checks for a collision
 with a rock? 
 
-If you said within the `if collides_with_rocket(rock)` block then you are right! Add in a line of
+If you said "within the `if collides_with_rocket(rock)` block" then you are right! Add in a line of
 code so it decreases the `lives` variable by 1 if the rocket collides with a rock:
 
 <details><summary>Show solution</summary>
