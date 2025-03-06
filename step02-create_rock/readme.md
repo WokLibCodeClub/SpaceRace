@@ -2,7 +2,7 @@
 
 ## Creating a single rock
 
-***ALMOST All the code in this step should go in the part of the code headed `=== Rocks ===` immediately after 'while playing:'***
+***ALMOST All the code in this step should go in the part of the code headed `=== Rocks ===` immediately after `while playing:`***
 
 Next we need to create the asteroids which the player has to avoid.
 There will be many asteroids so the code to create the asteroid will be needed many times.
