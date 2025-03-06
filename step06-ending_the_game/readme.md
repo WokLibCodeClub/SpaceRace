@@ -18,9 +18,10 @@ just before the `screen.update()` and fill in the variable name of `XXX`:
 ```
 </details>
 
-Hopefully this makes sense, when the number of lives is zero, we call the function called `game_over`.
-However, we need to define the `game_over` function. I will give you most of the code for this function
-but there is one important value that I will miss out:
+When the number of lives is zero, we call a function called `game_over`.
+However, we now need to define the `game_over` function as we haven't yet written it. Put this new function in the ***`=== Win or lose ===`*** section of the code. 
+
+I will give you most of the code for this function but there is one important value that I will miss out:
 
 ```python
 def game_over():
