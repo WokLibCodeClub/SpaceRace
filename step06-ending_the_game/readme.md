@@ -18,6 +18,8 @@ just before the `screen.update()` and fill in the variable name of `XXX`:
 ```
 </details>
 
+Check the indentation here: we *don't* want to carry out this test once for every single rock, so the word `if` should *not* be indented to line up with the line `move_rock(rock)`. Instead, it should be indented to line up with the next line: `screen.update()`.
+
 When the number of lives is zero, we call a function called `game_over`.
 However, we now need to define the `game_over` function as we haven't yet written it. Put this new function in the ***`=== Win or lose ===`*** section of the code. 
 
