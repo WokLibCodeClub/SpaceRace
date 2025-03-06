@@ -2,7 +2,7 @@
 
 ## Creating a single rock
 
-***ALMOST All the code in this step should go in the part of the code headed `=== Rocks ===` immediately after `while playing:`***
+***ALMOST All the code in this step should go in the part of the code headed `=== Rocks ===`***
 
 Next we need to create the asteroids which the player has to avoid.
 There will be many asteroids so the code to create the asteroid will be needed many times.
@@ -152,7 +152,7 @@ That is the final step of the asteroids step.
 
 ## Setting the asteroids in motion
 
-***The next bit of code should go in the part of the project headed `=== Main loop ===`.*** 
+***The next bit of code should go in the part of the project headed `=== Main loop ===` immediately after `while playing:`.*** 
 
 It's time to modify the "Main loop" section of the starter code. The rocks need to be moved as part of the main loop because in order to move *all* the rocks, the code must loop over each rock and this is something that needs to be done over and over again. We will loop over all the rocks using a `for` loop again:
 
