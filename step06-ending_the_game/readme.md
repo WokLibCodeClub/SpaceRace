@@ -85,7 +85,7 @@ def clear_rocks_for_message():
 
 This hides the rocks if they are in the area of the end-game message.
 
-Finally, call this function after either of the end-game messages is written i.e. put the following line after `playing = False` in each of
+Finally, call this function after either of the end-game messages is written i.e. put the following line before `playing = False` in each of
 `game_over` and `player_wins` functions:
 
 ```python
