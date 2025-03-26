@@ -17,7 +17,7 @@ The turtle library can be used to draw shapes by leaving a line behind the turtl
 rocket.penup()
 ```
 
-Now we want to put the rocket at the starting position, the starter code sets the screen size to 400 x 400 pixels. This means both the x-axis and y-axis start at -200 and finish at +200. We want the rocket to start at the bottom of the y-axis and the middle of the x-axis. Can you think what those coodinates should be? Click "Show code" to see how we move the rocket to the starting coordinates:
+Now we want to put the rocket at the starting position. The starter code sets the screen size to 400 x 400 pixels: this means both the x-axis and y-axis start at -200 and finish at +200. We want the rocket to start at the bottom of the y-axis and the middle of the x-axis. Can you think what those coodinates should be? Click "Show code" to see how we move the rocket to the starting coordinates:
 
 <details><summary>Show code</summary>
   
