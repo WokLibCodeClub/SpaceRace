@@ -127,19 +127,8 @@ def move_rock(rock):
 
 <details><summary>Click here to see the solution</summary>
   
-```python
-def move_rock(rock):
-  # Check if rock is going off the edge and reset it if it is.
-  xcoord = rock.xcor()
-  # If rock goes off the left of the screen then reset
-  if rock.direction == "left" and xcoord < XMIN:
-    reset_rock(rock)
-  # If rock goes off the right of the screen then reset
-  if rock.direction == "right" and xcoord > XMAX:
-    reset_rock(rock)
-  # Move the rock forward
-  rock.forward(1.5)
-```
+![ex8](ex8.png)
+
 </details>
 
  This function takes care of moving the rocks left and right (using rock.forward),
