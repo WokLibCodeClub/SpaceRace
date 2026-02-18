@@ -8,13 +8,9 @@ This is a loop which is always cycling, and can check if the user has pressed a 
 as an asteroid hitting a rocket. 
 
 At the end of the last step, we added some code to the main loop which moved the rocks across the screen.
-Now we want to check if any asteroid has hit the rocket after it moved. Add the following bit of code to the end of the `for` loop inside the main loop which begins `for rock in rocks:`
-:
+Now we want to check if any asteroid has hit the rocket after it moved. Add the following bit of code to the end of the `for` loop inside the main loop which begins `for rock in rocks:`:
 
-```python
-    if collides_with_rocket(rock):
-      reset_rocket()
-```
+![ex1](ex1.png)
 
 Make sure this is indented to the same level as the `move_rock` line - this will ensure it is in the rock loop. If we try to test this new code it will break the code
 because we have referred to two functions which we haven't written yet. Do you know what the names of those functions are?
@@ -23,25 +19,12 @@ because we have referred to two functions which we haven't written yet. Do you k
 
 The first function we will add is one which checks if the rocket has collided with a rock. It does this using the turtle `distance` function which measures the distance between two turtles. If the distance gets too small then the code assumes a collision has happened. The code below is missing the return values (`XXX`). I can tell you that one of the `XXX` is `True`, and one of them is `False`, can you figure out which one is which? You will need to look at the code that was added to the main loop to help you:
 
-```python
-def collides_with_rocket(rock):
-  distance = rocket.distance(rock)
-  if distance < 20:
-    return XXX
-  else:
-    return XXX
-```
+![ex2](ex2.png)
 
 <details><summary>Show solution</summary>
 
-```python
-def collides_with_rocket(rock):
-  distance = rocket.distance(rock)
-  if distance < 20:
-    return True
-  else:
-    return False
-```
+![ex2](ex2.png)
+
 The solution shows that we return `True` if the distance is less than 20 units from the rocket to the asteroid, and `False` if the distance
 is greater than or equal to 20. This means that the function `collides_with_rocket` will return `True` if the asteroid is close to (touching) the rocket,
 it will return `False` if the asteroid is not touching to the rocket.
