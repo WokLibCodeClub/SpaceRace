@@ -10,7 +10,7 @@ as an asteroid hitting a rocket.
 At the end of the last step, we added some code to the main loop which moved the rocks across the screen.
 Now we want to check if any asteroid has hit the rocket after it moved. Add the following bit of code to the end of the `for` loop inside the main loop which begins `for rock in rocks:`:
 
-![ex1](ex1.png)
+<img src="ex1.png" alt="ex1" width="120%" height="120%">
 
 Make sure this is indented to the same level as the `move_rock` line - this will ensure it is in the rock loop. If we try to test this new code it will break the code
 because we have referred to two functions which we haven't written yet. Do you know what the names of those functions are?
