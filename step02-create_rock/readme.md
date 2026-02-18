@@ -11,13 +11,7 @@ a Turtle object, tells it to use the `asteroid.png` image and to take the pen up
 
 <details><summary>Show code</summary>
 
-```python
-def create_rock():
-  rock = Turtle()
-  rock.shape("asteroid.png")
-  rock.penup()
-```
-</details>
+![ex1](ex1.png)
 
 In the game, there will be some asteroids travelling from right-to-left and some asteroids
 travelling from left-to-right. We can modify the `create_rock` function such that it takes an option
