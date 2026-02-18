@@ -20,41 +20,18 @@ travelling from left-to-right. We can modify the `create_rock` function such tha
 which instructs the rock to travel left or travel right. We can do this by adding a function parameter
 called `direction` in the parentheses:
 
-```python
-def create_rock(direction):
-  rock = Turtle()
-  rock.shape("asteroid.png")
-  rock.penup()
-  # This adds the direction parameter to the turtle object
-  rock.direction = direction
-```
+![ex2](ex2.png)
 
 As with the rocket, we need to give each asteroid a heading. In step01, an orientation plot showed the values needed for various directions. Can you remember the values required for left and right? Let's
 write a function that can put the asteroid in a starting position and set its heading:
 
-```python
-def reset_rock(rock):
-  if rock.direction == "right":
-    # Start rock at position off the left hand side of screen and tell it to travel right
-  elif rock.direction == "left":
-    # Start rock at position off the right hand side of screen and tell it to travel left
-```
+![ex3](ex3.png)
 
 That function takes a rock as a parameter and it checks if the direction of the rock is set to
 `"right"` or `"left"`. At the moment I have put a comment in the code to describe the logic
 that needs to be completed. The following code block shows the completed function:
 
-```python
-def reset_rock(rock):
-  if rock.direction == "right":
-    rock.setheading(0)
-    random_pos = (randint(XMIN - 1.25*WIDTH, XMIN), randint(-150,180))
-    rock.goto(random_pos)
-  elif rock.direction == "left":
-    rock.setheading(180)
-    random_pos = (randint(XMAX, XMAX + 1.25*WIDTH), randint(-150,180))
-    rock.goto(random_pos)
-```
+![ex4](ex4.png)
 
 This generates random starting positions for the asteroids. These positions are actually off the
 visible viewing area, this means that when they start travelling they will move into the visible
@@ -62,29 +39,14 @@ area and eventually go off the other end of the visible area.
 
 We need to call `reset_rock` on every rock that we create in `create_rock`. Do you know where you will need to put the call to `reset_rock`? It should be put at the bottom, the important bit is that `reset_rock` comes after setting the `direction`: 
 
-```python
-def create_rock(direction):
-  rock = Turtle()
-  rock.shape("asteroid.png")
-  rock.penup()
-  rock.direction = direction
-  reset_rock(rock)
-```
+![ex5](ex5.png)
 
 Currently, if we call this function, it will create the rock, set the position and heading,
 but do nothing else with it.
 When the function gets to the end, the `rock` object will no longer be accessible and will eventually destroyed. In order to keep/store the rock after the function finishes, the rock is returned from the
 function by using the `return` keyword:
 
-```python
-def create_rock(direction):
-  rock = Turtle()
-  rock.shape("asteroid.png")
-  rock.penup()
-  rock.direction = direction
-  reset_rock(rock)
-  return rock     # return the rock to the function caller
-```
+![ex6](ex6.png)
 
 So now we can create a rock by writing the following code:
 
@@ -125,22 +87,8 @@ for _ in range(number_of_left_rocks):
 
 <details><summary>Click here to see the solution</summary>
 
-```python
-# List to hold all rocks
-rocks = []
-number_of_left_rocks = 15
-number_of_right_rocks = 15
+![ex7](ex7.png)
 
-# Create rocks going right
-for _ in range(number_of_right_rocks):
-  rock = create_rock("right")
-  rocks.append(rock)
-
-# Create rocks going left
-for _ in range(number_of_left_rocks):
-  rock = create_rock("left")
-  rocks.append(rock)
-```
 </details>
 
 After this code has executed, the `list` should contain 30 rock objects.
