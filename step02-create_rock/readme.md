@@ -11,6 +11,7 @@ a Turtle object, tells it to use the `asteroid.png` image and to take the pen up
 
 <details><summary>Show code</summary>
 
+<p></p>
 ![ex1](ex1.png)
 
 </details>
