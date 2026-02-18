@@ -35,11 +35,7 @@ The next function that we need to add is `reset_rocket`. This will be a small fu
 
 <details><summary>Show solution</summary>
 
-```python
-def reset_rocket():
-  rocket.goto(0,-190)
-```
-</details>
+![ex4](ex4.png)
 
 Ensure this function is defined after the `rocket` turtle has been created.
 
