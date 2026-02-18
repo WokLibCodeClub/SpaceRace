@@ -1,34 +1,35 @@
-# Creating the rocks (asteroids)
+# Step 2 - Creating the rocks (asteroids)
 
 ## Creating a single rock
+
+***ALMOST All the code in this step should go in the part of the code headed `=== Rocks ===`***
 
 Next we need to create the asteroids which the player has to avoid.
 There will be many asteroids so the code to create the asteroid will be needed many times.
 One way to re-use the same bit of code multiple times is to put it in a function.
-Two functions were defined in step01 for moving the rocket. As a reminder, the keyword `def`
+We already defined two functions step 1 for moving the rocket. As a reminder, the keyword ```def```
 is used to define a function. Can you write a function with the name `create_rock` which creates
-a Turtle object, tells it to use the `asteroid.png` image and to take the pen up. The solution is below.
+a Turtle object, tells it to use the `asteroid.png` image as its shape, and lifts the pen up? The solution is below.
 
 <details><summary>Show code</summary>
 
 ![ex1](ex1.png)
 
 In the game, there will be some asteroids travelling from right-to-left and some asteroids
-travelling from left-to-right. We can modify the `create_rock` function such that it takes an option
-which instructs the rock to travel left or travel right. We can do this by adding a function parameter
-called `direction` in the parentheses:
+travelling from left-to-right. We can modify the `create_rock` function so that it takes in information
+which instructs the rock to travel either left or right. We can do this by adding a function *parameter*
+called `direction` in the parentheses. Here is the revised function:
 
 ```python
-def create_rock(direction):
+def create_rock(direction): # Notice the parameter inside the brackets
   rock = Turtle()
   rock.shape("asteroid.png")
   rock.penup()
-  # This adds the direction parameter to the turtle object
+  # Add a direction parameter to the turtle object and set it to the direction received as a parameter
   rock.direction = direction
 ```
 
-As with the rocket, we need to give each asteroid a heading. In step01, an orientation plot showed the values needed for various directions. Can you remember the values required for left and right? Let's
-write a function that can put the asteroid in a starting position and set its heading:
+As with the rocket, we need to give each asteroid a heading. In step 1, there was a diagram which showed the angle values needed for various heading directions. Can you remember the values required for left and right? Let's write a new function that can put the asteroid in a suitable starting position and set its heading:
 
 ```python
 def reset_rock(rock):
@@ -38,9 +39,8 @@ def reset_rock(rock):
     # Start rock at position off the right hand side of screen and tell it to travel left
 ```
 
-That function takes a rock as a parameter and it checks if the direction of the rock is set to
-`"right"` or `"left"`. At the moment I have put a comment in the code to describe the logic
-that needs to be completed. The following code block shows the completed function:
+This function takes ```rock``` as a parameter and it checks if the direction of the rock is set to
+`"right"` or `"left"`. The comments in the code  describe the logic that needs to be completed. The following code block shows the completed function:
 
 ```python
 def reset_rock(rock):
@@ -55,10 +55,9 @@ def reset_rock(rock):
 ```
 
 This generates random starting positions for the asteroids. These positions are actually off the
-visible viewing area, this means that when they start travelling they will move into the visible
-area and eventually go off the other end of the visible area.
+visible viewing area (off the screen to the left if the rock is travelling "right", and off to the right if the rock is travelling "left"). This means that when the rocks start travelling they will move into the visible area and eventually go off the other side of the visible area.
 
-We need to call `reset_rock` on every rock that we create in `create_rock`. Do you know where you will need to put the call to `reset_rock`? It should be put at the bottom, the important bit is that `reset_rock` comes after setting the `direction`: 
+We need to call function ```reset_rock``` for every rock that we create with function ```create_rock```. Do you know where you will need to put the call to `reset_rock`? It should be put at the bottom of function ```create_rock```. **Note:** it's important that `reset_rock` is called *after* setting the `direction`: 
 
 ```python
 def create_rock(direction):
@@ -69,9 +68,8 @@ def create_rock(direction):
   reset_rock(rock)
 ```
 
-Currently, if we call this function, it will create the rock, set the position and heading,
-but do nothing else with it.
-When the function gets to the end, the `rock` object will no longer be accessible and will eventually destroyed. In order to keep/store the rock after the function finishes, the rock is returned from the
+Currently, if we call this function, it will create a rock, set the position and heading, but do nothing else with it.
+When the function gets to the end, the `rock` object will no longer be accessible and will eventually be destroyed. In order to keep/store/use the rock after the function finishes, the rock is *returned* from the
 function by using the `return` keyword:
 
 ```python
@@ -84,7 +82,7 @@ def create_rock(direction):
   return rock     # return the rock to the function caller
 ```
 
-So now we can create a rock by writing the following code:
+So now we can create a rock by writing one or other of the following bits of code:
 
 ```python
 rock = create_rock("left")
@@ -141,35 +139,40 @@ for _ in range(number_of_left_rocks):
 ```
 </details>
 
-After this code has executed, the `list` should contain 30 rock objects.
-The rocket is controlled by the user pressing keys, the asteroids must be moved by the code itself.
-That is the final step to the asteroids.
+After this code has executed, the `rocks` list should contain 30 rock objects.
 
-## Set the asteroids in motion
+Although the rocket is controlled by the user pressing keys, the asteroids must be moved by the code itself.
+That is the final step of the asteroids step.
 
-It's time to modify the "Main loop" section of the starter code. The rocks need to be moved as
-part of the main loop. In order to move all the rocks, the code must loop over each rock. Can you think of something in python for looping? It is the `for` loop again, the `for` loop can be used to loop
-(iterate) over the rocks:
+## Setting the asteroids in motion
+
+***The next bit of code should go in the part of the project headed `=== Main loop ===` immediately after `while playing:`.*** 
+
+It's time to modify the "Main loop" section of the starter code. The rocks need to be moved as part of the main loop because in order to move *all* the rocks, the code must loop over each rock and this is something that needs to be done over and over again. We will loop over all the rocks using a `for` loop again:
 
 ```python
 for rock in rocks:
   move_rock(rock)
 ```
 
-The code above assumes there is a function called `move_rock` which takes a rock as the parameter.
-So let's write the `move_rock` function. Here is some incomplete code again, trying filling in the gaps:
+The code above assumes there is a function called `move_rock` which takes a rock as the parameter, but we haven't written this function yet.
+So let's write the `move_rock` function. 
+
+***Put this function in the `=== Rocks ===` section.***
+
+Here is some incomplete code again, trying filling in the gaps:
 
 ```python
 def move_rock(rock):
   # Check if rock is going off the edge and reset it if it is.
   xcoord = rock.xcor()
-  # If rock goes off the left of the screen then reset
+  # If rock goes off the left of the screen then reset it by calling the reset_rock function
   if rock.direction == "left" and xcoord < XXX:
     reset_rock(rock)
-  # If rock goes off the right of the screen then reset
+  # If rock goes off the right of the screen then reset it
   if rock.direction == "right" and XXX > XMAX:
     reset_rock(rock)
-  # Move the rock forward
+  # If the rock is not going off either edge then move the rock forward
   rock.XXX(1.5)
 ```
 
@@ -179,20 +182,24 @@ def move_rock(rock):
 def move_rock(rock):
   # Check if rock is going off the edge and reset it if it is.
   xcoord = rock.xcor()
-  # If rock goes off the left of the screen then reset
+  # If rock goes off the left of the screen then reset it by calling the reset_rock function
   if rock.direction == "left" and xcoord < XMIN:
     reset_rock(rock)
-  # If rock goes off the right of the screen then reset
+  # If rock goes off the right of the screen then reset it
   if rock.direction == "right" and xcoord > XMAX:
     reset_rock(rock)
-  # Move the rock forward
+  # If the rock is not going off either edge then move the rock forward
   rock.forward(1.5)
 ```
 </details>
 
- This function takes care of moving the rocks left and right (using rock.forward),
- but it is also responsible for resetting the rocks once they get off the end of the screen.
+ This function takes care of moving the rocks (either to the left or the right, using `rock.forward`),
+ but it is also responsible for resetting the rocks once they get off the edges of the screen.
 
-Once you have completed this step, you should asteroids flying left and right across the game.
+Once you have completed this step, you should see asteroids flying left and right across the screen.
+
+Don't forget to ***test*** your code.
 
 [Click here to go to step 3 to add collisions between the rocks and the rocket.](../step03-add_collisions/readme.md)
+
+[Back to Step 1](../step01-create_rocket/readme.md)

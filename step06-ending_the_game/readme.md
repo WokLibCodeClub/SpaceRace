@@ -1,4 +1,4 @@
-# Ending the game
+# Step 6 - Ending the game
 
 ## Losing the game
 
@@ -18,9 +18,12 @@ just before the `screen.update()` and fill in the variable name of `XXX`:
 ```
 </details>
 
-Hopefully this makes sense, when the number of lives is zero, we call the function called `game_over`.
-However, we need to define the `game_over` function. I will give you most of the code for this function
-but there is one important value that I will miss out:
+Check the indentation here: we *don't* want to carry out this test once for every single rock, so the word `if` should *not* be indented to line up with the line `move_rock(rock)`. Instead, it should be indented to line up with the next line: `screen.update()`.
+
+When the number of lives is zero, we call a function called `game_over`.
+However, we now need to define the `game_over` function as we haven't yet written it. Put this new function in the ***`=== Win or lose ===`*** section of the code. 
+
+I will give you most of the code for this function but there is one important value that I will miss out:
 
 ```python
 def game_over():
@@ -37,12 +40,12 @@ This creates a turtle, with red text which writes "GAME OVER" in the centre of t
 modifies a global variable called `playing`. This variable should be either `True` or `False`, what do you think
 `playing` should be if the game is ending. Hopefully you said `False`! If so, then you were right, `playing` should be `False`
 if it is game over. This will exit the main loop and finish the code. If you try playing and collide with an asteroid 3 times then
-you should see the game over message and the game should stop.
+you should see the GAME OVER message and the game should stop.
 
 ## Winning the game
 
 The previous instructions say how to end the game by losing all the lives. Now let's add some code to be able to win the game 
-when the player gets a score of 3. Put this code in the main loop just after the check for `lives == 0`, what number will you put 
+when the player gets to a score of 3. Put this code in the main loop just after the check for `lives == 0`, what number will you put 
 in for `XXX`:
 
 ```python
@@ -50,8 +53,10 @@ in for `XXX`:
     player_wins()
 ```
 
-Now define the `player_wins` function, this is very similar to the `game_over` function. Copy and paste the `game_over` function and
-rename the function `player_wins`. Now change the text colour from "red" to "lime", and change the message from "GAME OVER" to "YOU WIN".
+This `if` block should be indented to line up with the previous `if` block, which tested for the value of `lives`.
+
+Now define the `player_wins` function, this is very similar to the `game_over` function. Put this new function in the ***`=== Win or lose ===`*** section of the code. 
+Copy and paste the `game_over` function and rename the function `player_wins`.  Now change the text colour from "red" to "lime", and change the message from "GAME OVER" to "YOU WIN".
 Solution below:
 
 <details><summary>Show solution</summary>
@@ -73,7 +78,7 @@ Now the game should end when the player gets to a score of 3!
 ## Tidy up end-game message
 
 Currently, the "GAME OVER" or "YOU WIN" message could be overlapping with asteroids. It would be nice to delete the asteroids that are overlapping
-when the message shows. Add the following function:
+when the message shows. Add the following function in the ***`=== Win or lose ===`*** section of the code:
 
 ```python
 def clear_rocks_for_message():
@@ -84,8 +89,8 @@ def clear_rocks_for_message():
 
 This hides the rocks if they are in the area of the end-game message.
 
-Finally, call this function after either of the end-game messages is written i.e. put the following line after `playing = False` in each of
-`game_over` and `player_wins`:
+Finally, call this function after either of the end-game messages is written i.e. put the following line before `playing = False` in each of
+`game_over` and `player_wins` functions:
 
 ```python
   clear_rocks_for_message()
@@ -103,6 +108,8 @@ Here are some further challenges if you want to keep developing the game:
    loop. You will want the lives/score to reset, and the rocket to go to the start. Once this has been done, a high score feature could be added to
    the game.
 3. Add an explosion when a rock hits the rocket. This would need a new image uploaded and some extra code in the collision detection.
-4. Add a blaster weapon to the rocket that can destroy the rocks in the path! This will make the game a bit easy but it would be fun to add. Can you
-   add code so a blaster fires when the space-bar is pressed. This would create a turtle object to represent the shot, and that would then need
+4. Add a blaster weapon to the rocket that can destroy the rocks in its path! This will make the game a bit easy but it would be fun to add. Can you
+   add code so a blaster fires when the space-bar is pressed? You could do this by creating a turtle object to represent the shot, and then writing
    collision code for if it hits a rock!
+
+[Back to Step 5](../step05-add_lives/readme.md)
