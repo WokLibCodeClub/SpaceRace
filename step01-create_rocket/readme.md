@@ -50,13 +50,9 @@ def move_rocket_up():
   rocket.forward(5)
 ```
 
-If we were to call this function like this:
+If we were to call this function by writing this code in our project: ```move_rocket_up()```, then the rocket would move forward by 5 units. 
 
-```python
-move_rocket_up()
-```
-
-then the rocket would move forward by 5 units. This uses the turtle ```forward``` function. There is also a function called ```back``` in the turtle library. Could you write a function for moving the rocket down? Check the code below:
+Our ```move_rocket_up()``` function uses the turtle ```forward``` function. There is also a turtle command  ```back``` in the turtle library. Could you write another function for moving the rocket down? Check the code below:
 
 <details><summary>Show code</summary>
 
