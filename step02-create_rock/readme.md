@@ -53,17 +53,19 @@ function by using the `return` keyword:
 
 ![ex6](ex6.png)
 
-So now we can create a rock by writing the following code:
+So now if we wanted to create a rock we could write the following code:
 
 ```python
 rock = create_rock("left")
 ```
 
-or
+to create a rock moving to the left, or
 
 ```python
 rock = create_rock("right")
 ```
+
+for a rock moving to the right.
 
 However, that will give us just one rock, and we want lots of rocks!
 
