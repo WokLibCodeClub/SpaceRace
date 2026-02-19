@@ -143,7 +143,7 @@ def move_rock(rock):
 </details>
 
  This function takes care of moving the rocks left and right (using rock.forward),
- but it is also responsible for resetting the rocks once they get off the end of the screen.
+ but it is also responsible for resetting the rocks when they go beyond the edges of the screen.
 
 Test your code by clicking on Run. If you have completed this step properly, you should see asteroids moving to the left and to the right across the screen. You should also be able to move your rocket up and down with the arrow keys (but don't forget to click in the graphics window first to activate this pane).
 
