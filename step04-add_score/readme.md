@@ -11,9 +11,7 @@ should you start a score at? You just need one simple line of code to do this.
 
 <details><summary>Show solution</summary>
 
-```python
-score = 0
-```
+![ex1](ex1.png)
 
 Make sure this line is not indented.
 
@@ -36,11 +34,8 @@ See if you can complete the part labelled TODO in the code:
 
 <details><summary>Show solution</summary>
 
-```python
-  if rocket.ycor() > YMAX:
-    reset_rocket()
-    score = score + 1  # add one to the score
-```
+![ex2](ex2.png)
+
 </details>
 
 Be careful about the indentation here. We do not need to check the position of the rocket everytime we move a rock so we do not want this bit of code
@@ -54,12 +49,7 @@ we do not want to see the turtle itself, we just want to see the text that it is
 
 ***Put the bit of code which sets up this turtle in the `=== Scores & Lives ===` section.***
 
-```python
-score_turtle = Turtle()
-score_turtle.goto(190, -170)
-score_turtle.hideturtle()
-score_turtle.color("white")
-```
+![ex3](ex3.png)
 
 Finally, we want to get the `score_turtle` to write the score to the screen. Put the following line of code ***inside the main `while playing:` loop*** just under the line where you increased
 the score:
@@ -71,12 +61,7 @@ the score:
 Again, be careful regarding indentation, and position this code after the score has been increased. Again, we've referred to a new function before we've written it! So, now let's write some code to write the 
 score to the screen. Put this function definition in the ***`=== Scores & Lives ===` section*** of the code after the `score_turtle` has been created:
 
-```python
-def update_score():
-  score_turtle.clear()    # delete any current text
-  score_msg = XXXX 
-  score_turtle.write(score_msg, align="right")
-```
+![ex4](ex4.png)
 
 `score_msg` is a *text* variable and contains the text that the `score_turtle` will write on the screen. What would you put in place of XXXX? 
 
@@ -84,9 +69,7 @@ def update_score():
 
 One choice would be:
 
-```python
-  score_msg = "Score: " + str(score)
-```
+![ex5](ex5.png)
 
 This will write the text **Score: ** and follow it with the value of the variable `score`. But notice, the variable `score` is an integer variable, so if we want to add it to a text variable using the `+` sign we need to convert it to a text string first.
 
