@@ -34,7 +34,7 @@ you should see the GAME OVER message and the game should stop.
 ## Winning the game
 
 The previous instructions say how to end the game by losing all the lives. Now let's add some code to be able to win the game 
-when the player gets to a score of 3. Put this code in the main loop just after the check for `lives == 0`, what number will you put in for `XXX`?
+when the player gets to a score of 3. Put this code in the main loop just after the check for `lives == 0`. What number will you put in for `XXX`?
 
 ![ex3](ex3.png)
 
