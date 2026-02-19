@@ -69,13 +69,17 @@ def move_rocket_down():
 Now we make use of the turtle ```screen.onkey()``` function to connect these functions to the keyboard UP and DOWN arrow keys:
 
 ```python
-screen.onkey(move_rocket_up, "up") # this specifies the code which will be run when the user presses the UP arrow
-screen.onkey(move_rocket_down, "down") # this specifies the code which will be run when the user presses the DOWN arrow
+# this specifies the code which will be run when the user presses the UP arrow
+screen.onkey(move_rocket_up, "up")
+# this specifies the code which will be run when the user presses the DOWN arrow
+screen.onkey(move_rocket_down, "down")
 ```
 
 That means when the up arrow key is pressed on the keyboard, it will call the function `move_rocket_up`, when the down arrow key is pressed, it will call `move_rocket_down`.
 
 Now you should have a rocket image on the canvas which can be moved up and down with the arrow keys.
+
+***Don't forget, you have to click once in the turtle screen to make this panel active before the arrow keys will work.***
 
 [Click here to go to step 2 to learn how to add the rocks.](../step02-create_rock/readme.md)
 
