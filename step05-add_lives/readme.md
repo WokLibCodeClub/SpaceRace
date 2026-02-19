@@ -9,9 +9,8 @@ variable and set it to 3.
 
 <details><summary>Show solution</summary>
 
-```python
-lives = 3
-```
+![ex1](ex1.png)
+
 </details>
 
 Now, copy and paste the code for setting up the `score_turtle` just below your new variable. In the pasted code, replace
@@ -21,12 +20,8 @@ the word `score_turtle` with `lives_turtle`. Then change the y-position of the `
 
 <details><summary>Show solution</summary>
 
-```python
-lives_turtle = Turtle()
-lives_turtle.goto(190, -190)
-lives_turtle.hideturtle()
-lives_turtle.color("white")
-```
+![ex2](ex2.png)
+
 </details>
 
 After those changes, we have a `lives` variable to keep track of how many lives the player has, and we have a
@@ -40,11 +35,8 @@ code so it decreases the `lives` variable by 1 if the rocket collides with a roc
 
 <details><summary>Show solution</summary>
 
-```python
-    if collides_with_rocket(rock):
-      reset_rocket()
-      lives = lives - 1		  # This is the new line
-```
+![ex3](ex3.png)
+
 </details>
 
 For the `score` variable, we have a `update_score` function to write the `score` to the screen. We need a very similar
@@ -54,11 +46,8 @@ that tells the users how many "Lives" they have left?
 
 <details><summary>Show solution</summary>
 
-```python
-def update_lives():
-  lives_turtle.clear()
-  lives_turtle.write("Lives: " + str(lives), align="right")
-```
+![ex4](ex4.png)
+
 </details>
 
 Now call the `update_lives` function after it is defined in order to write the number of lives to the screen before the start of the main loop:
