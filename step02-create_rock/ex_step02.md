@@ -2,4 +2,4 @@
 
 ![code for step 2](ex_step02.png)
 
-Click [here](README.md/#check-your-code) to return to instructions.
+Click [here](readme.md/#check-your-code) to return to instructions.
