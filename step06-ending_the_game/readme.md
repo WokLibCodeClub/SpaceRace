@@ -12,10 +12,8 @@ just before the `screen.update()` and fill in the variable name of `XXX`:
 
 <details><summary>Show solution</summary>
 
-```python
-  if lives == 0:
-    game_over()
-```
+![ex1](ex1.png)
+
 </details>
 
 Check the indentation here: we *don't* want to carry out this test once for every single rock, so the word `if` should *not* be indented to line up with the line `move_rock(rock)`. Instead, it should be indented to line up with the next line: `screen.update()`.
@@ -25,16 +23,7 @@ However, we now need to define the `game_over` function as we haven't yet writte
 
 I will give you most of the code for this function but there is one important value that I will miss out:
 
-```python
-def game_over():
-  t = Turtle()
-  t.hideturtle()
-  t.color("red")
-  t.goto(0,0)
-  t.write("GAME OVER", align="center", font=("Arial", 40, "bold"))
-  global playing
-  playing = XXX
-```
+![ex2](ex2.png)
 
 This creates a turtle, with red text which writes "GAME OVER" in the centre of the screen. This function also
 modifies a global variable called `playing`. This variable should be either `True` or `False`, what do you think
@@ -48,10 +37,7 @@ The previous instructions say how to end the game by losing all the lives. Now l
 when the player gets to a score of 3. Put this code in the main loop just after the check for `lives == 0`, what number will you put 
 in for `XXX`:
 
-```python
-  if score == XXX:
-    player_wins()
-```
+![ex3](ex3.png)
 
 This `if` block should be indented to line up with the previous `if` block, which tested for the value of `lives`.
 
@@ -61,16 +47,8 @@ Solution below:
 
 <details><summary>Show solution</summary>
 
-```python
-def player_wins():
-  t = Turtle()
-  t.hideturtle()
-  t.color("lime")
-  t.goto(0,0)
-  t.write("YOU WIN!!!!!", align="center", font=("Arial", 40, "bold"))
-  global playing
-  playing = False
-```
+![ex4](ex4.png)
+
 </details>
 
 Now the game should end when the player gets to a score of 3!
@@ -80,21 +58,14 @@ Now the game should end when the player gets to a score of 3!
 Currently, the "GAME OVER" or "YOU WIN" message could be overlapping with asteroids. It would be nice to delete the asteroids that are overlapping
 when the message shows. Add the following function in the ***`=== Win or lose ===`*** section of the code:
 
-```python
-def clear_rocks_for_message():
-  for rock in rocks:
-    if rock.ycor() < 50 and rock.ycor() > -10:
-      rock.hideturtle()
-```
+![ex5](ex5.png)
 
 This hides the rocks if they are in the area of the end-game message.
 
 Finally, call this function after either of the end-game messages is written i.e. put the following line before `playing = False` in each of
 `game_over` and `player_wins` functions:
 
-```python
-  clear_rocks_for_message()
-```
+![ex6](ex6.png)
 
 And that's the end of this project! You should now have a functioning space race game coded in python.
 
