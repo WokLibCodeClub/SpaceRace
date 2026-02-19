@@ -59,6 +59,12 @@ The score shown on the screen should now decrease each time the rocket is hit. H
 
 No, it does not, so we need to add more code to finish the game!
 
+### Check your code
+
+If you have followed all the instructions up to the ende of step 5 your code for the ```=== Scores & Lives ===``` and ```=== Main loop ===``` sections should look something like [this](ex_step05.md).
+
+### Next step
+
 [Click here to go to step 6 to add a game ending](../step06-ending_the_game/readme.md)
 
 [Back to Step 4](../step04-add_score)
