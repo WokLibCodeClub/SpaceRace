@@ -4,8 +4,7 @@ So far you have coded up a game with a rocket and asteroids, and there
 is a score that increases each time the rocket gets to the top. However, this will go on forever! The game should
 have an end. We will give the player 3 lives before it is "game over".
 
-In the ***"Scores & Lives"*** section of the code, just under the code for setting up the `score_turtle`,  create a `lives`
-variable and set it to 3.
+At the end of the ***"Scores & Lives"*** section of the code, create a `lives` variable and set it to 3.
 
 <details><summary>Show solution</summary>
 
@@ -50,7 +49,7 @@ that tells the users how many "Lives" they have left?
 
 </details>
 
-Now call the `update_lives` function after it is defined in order to write the number of lives to the screen before the start of the main loop:
+Now call the `update_lives` function immediately after you have decreased the number of lives by 1 when the rocket touches a rock, ***and again*** immediately after it is defined in order to write the number of lives to the screen before the start of the main loop:
 
 ```python
 update_lives()
