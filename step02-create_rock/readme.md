@@ -110,7 +110,7 @@ That is the final step to the asteroids.
 
 It's time to modify the "Main loop" section of the starter code. The rocks need to be moved as
 part of the main loop. In order to move all the rocks, the code must loop over each rock. Can you think of something in python for looping? It is the `for` loop again, the `for` loop can be used to loop
-(iterate) over the rocks. Put the next two lines of code just after the line which says ```while playing```, but **make sure you indent these lines correctly**. The first line will be indented once, but the second line needs to be indented twice.
+(iterate) over the rocks. Put the next two lines of code just after the line which says ```while playing:```, but **make sure you indent these lines correctly**. The first line will be indented once, but the second line needs to be indented twice.
 
 ```python
   for rock in rocks:
