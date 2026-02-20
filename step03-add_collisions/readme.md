@@ -29,6 +29,8 @@ The solution shows that we return `True` if the distance is less than 20 units f
 is greater than or equal to 20. This means that the function `collides_with_rocket` will return `True` if the asteroid is close to (touching) the rocket,
 it will return `False` if the asteroid is not touching to the rocket.
 
+</details>
+
 The next function that we need to add is `reset_rocket`. This will be a small function that moves the rocket back to the starting position when it has hit an asteroid. In step 1 of this game we wrote code to send the rocket to its starting position; can you find the line of code that moves the rocket to the starting position, and then use that code to create a function called `reset_rocket` that moves the rocket to the same starting position again? The solution is below:
 
 <details><summary>Show solution</summary>
