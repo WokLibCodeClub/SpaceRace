@@ -25,7 +25,11 @@ travelling from left-to-right. We can modify the `create_rock` function such tha
 which instructs the rock to travel left or travel right. We can do this by adding a function parameter
 called `direction` in the parentheses:
 
+<details><summary>Show code</summary>
+
 ![ex2](ex2.png)
+
+</details>
 
 As with the rocket, we need to give each asteroid a heading. In step01, an orientation plot showed the values needed for various directions. Can you remember the values required for left and right? Let's
 write a function that can put the asteroid in a starting position and set its heading:
