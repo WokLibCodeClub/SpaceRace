@@ -82,4 +82,8 @@ Here are some further challenges if you want to keep developing the game:
    add code so a blaster fires when the space-bar is pressed? You could do this by creating a turtle object to represent the shot, and then writing
    collision code for if it hits a rock!
 
+### Check your code
+
+If you have followed all the instructions up to the here, your code should look something like [this](ex_complete.md).
+
 [Back to Step 5](../step05-add_lives/readme.md)
