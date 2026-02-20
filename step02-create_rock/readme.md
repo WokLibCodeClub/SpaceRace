@@ -10,7 +10,7 @@ is used to define a function.
 
 ***Note: the code below will be placed in the `========== Rocks ==============` part of the code.***
 
-Can you write a function with the name `create_rock` which creates a Turtle object called ```rock```, tells it to use the `asteroid.png` image and to take the pen up. (The solution is below, but have a go at writing your code *before* you look at the solution.)
+Can you write a function with the name `create_rock` which creates a Turtle object called ```rock```, tells it to use the `asteroid.png` image and to take the pen up? (The solution is below, but have a go at writing your code *before* you look at the solution.)
 
 <details><summary>Show code</summary>
 
