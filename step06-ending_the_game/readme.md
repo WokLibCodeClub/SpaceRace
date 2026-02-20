@@ -78,9 +78,9 @@ Here are some further challenges if you want to keep developing the game:
    loop. You will want the lives/score to reset, and the rocket to go to the start. Once this has been done, a high score feature could be added to
    the game.
 3. Add an explosion when a rock hits the rocket. This would need a new image uploaded and some extra code in the collision detection.
-4. Add a blaster weapon to the rocket that can destroy the rocks in its path! This will make the game a bit easy but it would be fun to add. Can you
+4. Add a blaster weapon to the rocket so that it can destroy the rocks in its path! This will make the game a bit easy but it would be fun to add. Can you
    add code so a blaster fires when the space-bar is pressed? You could do this by creating a turtle object to represent the shot, and then writing
-   collision code for if it hits a rock!
+   collision code for if this turtle hits a rock!
 
 ### Check your code
 
