@@ -61,7 +61,7 @@ No, it does not, so we need to add more code to finish the game!
 
 ### Check your code
 
-If you have followed all the instructions up to the ende of step 5 your code for the ```=== Scores & Lives ===``` and ```=== Main loop ===``` sections should look something like [this](ex_step05.md).
+If you have followed all the instructions up to the end of step 5 your code for the ```=== Scores & Lives ===``` and ```=== Main loop ===``` sections should look something like [this](ex_step05.md).
 
 ### Next step
 
