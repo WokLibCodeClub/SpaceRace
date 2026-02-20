@@ -46,7 +46,7 @@ This generates random starting positions for the asteroids. These positions are 
 visible viewing area, this means that when they start travelling they will move into the visible
 area and eventually go off the other end of the visible area.
 
-We need to call `reset_rock` on every rock that we create in `create_rock`. Do you know where you will need to put the call to `reset_rock`? It should be put at the bottom, the important bit is that `reset_rock` comes after setting the `direction`: 
+We need to call `reset_rock` on every rock that we create in `create_rock`. Do you know where you will need to put the call to `reset_rock`? It should be put at the bottom of function `create_rock`, the important bit is that `reset_rock` comes after setting the `direction`:
 
 ![ex5](ex5.png)
 
