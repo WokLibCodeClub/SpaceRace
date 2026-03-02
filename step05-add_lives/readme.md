@@ -4,7 +4,11 @@ So far you have coded up a game with a rocket and asteroids, and there
 is a score that increases each time the rocket gets to the top. However, this will go on forever! The game should
 have an end. We will give the player 3 lives before it is "game over".
 
-At the end of the ***"Scores & Lives"*** section of the code, create a `lives` variable and set it to 3.
+At the end of the
+
+```# ========== Scores & Lives =============```
+
+section of the code, create a `lives` variable and set it to 3.
 
 <details><summary>Show solution</summary>
 
