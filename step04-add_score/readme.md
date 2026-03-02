@@ -67,7 +67,7 @@ the score:
 ```
 
 Again, be careful regarding indentation, and position this code after the score has been increased. Again, we've referred to a new function before we've written it! So, now let's write some code to write the 
-score to the screen. Put this function definition in the ***`=== Scores & Lives ===` section*** of the code after the `score_turtle` has been created:
+score to the screen. Put this function definition in the ***`=== Scores & Lives ===`*** section of the code after the `score_turtle` has been created:
 
 ![ex4](ex4.png)
 
