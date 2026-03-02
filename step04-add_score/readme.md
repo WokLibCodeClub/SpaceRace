@@ -6,7 +6,11 @@ Up to now, we have a rocket, some asteroids, and the rocket can be hit by the as
 Let's add some code to allow the game to keep track of the score, where the player gets one point if they make it
 to the top of the screen.
 
-In the ***=== Scores & Lives ===*** section of the starter code, can you create a variable called `score` and initialise it? What number
+In the
+
+```# ========== Scores & Lives =============```
+
+section of the starter code, can you create a variable called `score` and initialise it? What number
 should you start a score at? You just need one simple line of code to do this.
 
 <details><summary>Show solution</summary>
