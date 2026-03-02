@@ -15,7 +15,10 @@ Now we want to check if any asteroid has hit the rocket after it moved. Add the 
 Make sure this is indented to the same level as the `move_rock` line - this will ensure it is in the rock loop. If we try to test this new code it will break the code
 because we have referred to two functions which we haven't written yet. Do you know what the names of those functions are?
 
-***Note: the two new functions we need to write will be placed in the `=== Rocket ===` part of the code.***
+***Note: the two new functions we need to write will be placed in the***
+
+```# ============= Rocket ==============```
+***part of the code.***
 
 The first function we will add is one which checks if the rocket has collided with a rock. It does this using the turtle `distance` function which measures the distance between two turtles. If the distance gets too small then the code assumes a collision has happened. The code below is missing the return values (`XXX`). I can tell you that one of the `XXX` is `True`, and one of them is `False`, can you figure out which one is which? You will need to look at the code that was added to the main loop to help you:
 
