@@ -10,7 +10,7 @@ In the
 
 ```# ========== Scores & Lives =============```
 
-section of the starter code, can you create a variable called `score` and initialise it? What number
+section of the code, can you create a variable called `score` and initialise it? What number
 should you start a score at? You just need one simple line of code to do this.
 
 <details><summary>Show solution</summary>
