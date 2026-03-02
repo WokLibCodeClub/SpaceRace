@@ -89,7 +89,11 @@ Lastly, call function `update_score` just after defining it so the score is writ
 update_score()
 ```
 
-just before the start of the ***`=== Win or lose ===`*** section of the code.
+at the very end of the 
+
+```# ========== Scores & Lives =============```
+
+section of the code.
 
 If all is correct, then you should now see a bit of text when the game is started showing the score in the bottom-right corner.
 The score should increase if the rocket gets to the top edge.
