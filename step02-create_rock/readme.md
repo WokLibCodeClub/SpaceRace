@@ -79,7 +79,11 @@ However, that will give us just one rock, and we want lots of rocks!
 
 ## Creating multiple rocks
 
-***Note: we're still adding code in the `========== Rocks ==============` part of the project.***
+***Note: we're still adding code in the***
+
+```# ========== Rocks ==============```
+
+***part of the project.***
 
 In order to create multiple rocks we are going to use a couple of `for` loops.
 Some incomplete code is below, the missing parts are indicated with XXX.
