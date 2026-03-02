@@ -118,7 +118,11 @@ That is the final step for the asteroids.
 
 ## Set the asteroids in motion
 
-***Note: the next two lines of code go in the `============ Main loop ================` part of the project.***
+***Note: the next two lines of code go in the***
+
+```# ============ Main loop ================```
+
+part of the project.***
 
 It's time to modify the "Main loop" section of the starter code. The rocks need to be moved as
 part of the main loop. In order to move all the rocks, the code must loop over each rock. Can you think of something in python for looping? It is the `for` loop again, the `for` loop can be used to loop
@@ -129,7 +133,11 @@ part of the main loop. In order to move all the rocks, the code must loop over e
     move_rock(rock)
 ```
 
-***Note: we will put the ```move_rock()``` function in the `========== Rocks ==============` part of the project.***
+***Note: we will put the ```move_rock()``` function in the***
+
+```# ========== Rocks ==============```
+
+***part of the project.***
 
 The code above assumes there is a function called `move_rock` which takes a rock as the parameter.
 So let's write the `move_rock` function. Here is some incomplete code again, trying filling in the gaps:
