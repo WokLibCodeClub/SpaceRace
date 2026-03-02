@@ -23,7 +23,7 @@ Make sure this line is not indented.
 
 Now we need the score to increase if the rocket gets to the top edge of the screen. Where do you think we'll need to put the
 code for checking if the rocket got to the top of the screen? This is something we need to do not just once, but over and over again. There's a bit of the code that I previously mentioned is always
-cycling and checking things... it is the *main loop*. So, we need to add this check at the end of the main `while playing:` loop to see if the rocket has made it to
+cycling and checking things... it is the *main loop*. So, we need to add this check in the ***=== Main loop ===*** section at the end of the `while playing:` loop to see if the rocket has made it to
 the top. But how could we determine if the rocket *is* at the top?
 
 We know the size of the screen, it is 400 x 400 pixels, so the y-axis runs from -200 to +200. Therefore, if we can get the y-coordinate of the rocket
