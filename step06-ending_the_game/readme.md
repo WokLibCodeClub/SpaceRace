@@ -64,7 +64,11 @@ Now the game should end when the player gets to a score of 3!
 ## Tidy up end-game message
 
 Currently, the "GAME OVER" or "YOU WIN" message could be overlapping with asteroids. It would be nice to delete the asteroids that are overlapping
-when the message shows. Add the following function in the ***`=== Win or lose ===`*** section of the code:
+when the message shows. Add the following function in the
+
+```# ======= Win or lose ===================```
+
+section of the code:
 
 ![ex5](ex5.png)
 
