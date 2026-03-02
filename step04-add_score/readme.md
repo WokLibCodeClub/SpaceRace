@@ -51,7 +51,11 @@ way of seeing the score! We need to add some code to show the score on the scree
 The following code creates a turtle object and places it in a corner of the screen. Can you tell which corner it will be? The code hides the turtle because
 we do not want to see the turtle itself, we just want to see the text that it is going to write:
 
-***Put the bit of code which sets up this turtle in the `=== Scores & Lives ===` section.***
+***Put the bit of code which sets up this turtle in the***
+
+```# ========== Scores & Lives =============```
+
+***section.***
 
 ![ex3](ex3.png)
 
