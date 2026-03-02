@@ -158,3 +158,6 @@ If you have followed all the instructions in step 2 your code should look someth
 ### Next step
 
 [Click here to go to step 3 to add collisions between the rocks and the rocket.](../step03-add_collisions/readme.md)
+
+[Back to Step 1](../step01-create_rocket/readme.md)
+
