@@ -8,7 +8,11 @@ One way to re-use the same bit of code multiple times is to put it in a function
 Two functions were defined in step01 for moving the rocket. As a reminder, the keyword `def`
 is used to define a function.
 
-***Note: the code below will be placed in the `========== Rocks ==============` part of the code.***
+***Note: the code below will be placed in the***
+
+```# ========== Rocks ==============```
+
+***part of the code.***
 
 Can you write a function with the name `create_rock` which creates a Turtle object called ```rock```, tells it to use the `asteroid.png` image and to take the pen up? (The solution is below, but have a go at writing your code *before* you look at the solution.)
 
