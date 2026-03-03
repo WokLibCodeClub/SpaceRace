@@ -122,7 +122,7 @@ That is the final step for the asteroids.
 
 ```# ============ Main loop ================```
 
-part of the project.***
+***part of the project.***
 
 It's time to modify the "Main loop" section of the starter code. The rocks need to be moved as
 part of the main loop. In order to move all the rocks, the code must loop over each rock. Can you think of something in python for looping? It is the `for` loop again, the `for` loop can be used to loop
